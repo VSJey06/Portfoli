@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio Website - Jeyaveer VS</title>
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">Portfolio</a>
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#internship">Internships</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
+        <div class="home-img-container">
+            <div class="home-img">
+                <img src="main.jpg" alt="Jeyaveer VS">
+                <div class="about-overlay">
+                    <h3>About Me</h3>
+                    <p>I'm a passionate web developer with expertise in full-stack development. I love creating beautiful and functional websites that solve real-world problems.</p>
+                    <p>When I'm not coding, I enjoy learning new technologies, contributing to open-source projects, and sharing knowledge with the community.</p>
+                </div>
+            </div>
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Jeyaveer VS</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>A passionate developer creating amazing web experiences</p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/jey06" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/VSJey06" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/vsjeyaveer" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#contact" class="btn">Hire me</a>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+        <h2>My <span>Services</span></h2>
+        <div class="services-container">
+            <div class="service-card">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Building responsive and dynamic websites using modern technologies</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-palette"></i>
+                <h3>Web Design</h3>
+                <p>Creating beautiful and user-friendly designs for your projects</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive Design</h3>
+                <p>Ensuring your website works perfectly on all devices</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+        <h2>My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skill-card" onclick="showSkillDetail('java')">
+                <div class="skill-icon">
+                    <i class="fab fa-java"></i>
+                </div>
+                <h3>Java</h3>
+                <p>Advanced</p>
+            </div>
+            <div class="skill-card" onclick="showSkillDetail('python')">
+                <div class="skill-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <h3>Python</h3>
+                <p>Intermediate</p>
+            </div>
+            <div class="skill-card" onclick="showSkillDetail('javascript')">
+                <div class="skill-icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <h3>JavaScript</h3>
+                <p>Advanced</p>
+            </div>
+            <div class="skill-card" onclick="showSkillDetail('react')">
+                <div class="skill-icon">
+                    <i class="fab fa-react"></i>
+                </div>
+                <h3>React.js</h3>
+                <p>Advanced</p>
+            </div>
+            <div class="skill-card" onclick="showSkillDetail('node')">
+                <div class="skill-icon">
+                    <i class="fab fa-node"></i>
+                </div>
+                <h3>Node.js</h3>
+                <p>Intermediate</p>
+            </div>
+            <div class="skill-card" onclick="showSkillDetail('html')">
+                <div class="skill-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h3>HTML/CSS</h3>
+                <p>Advanced</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILL DETAIL MODAL -->
+    <div id="skillModal" class="skill-modal">
+        <div class="skill-modal-content">
+            <span class="close" onclick="closeSkillDetail()">&times;</span>
+            <div id="skillDetail"></div>
+        </div>
+    </div>
+
+    <!-- EDUCATION SECTION -->
+    <section class="education" id="education">
+        <h2>My <span>Education</span></h2>
+        <div class="education-container">
+            <div class="education-card">
+                <h3>Bachelor of Technology</h3>
+                <p class="school">Dhanalakshmi Srinivasan Collage of Engineering</p>
+                <p class="year">2022 - 2026</p>
+                <p class="description">Completed course in Artificial Intelligence of Data Science Engineering</p>
+            </div>
+            <div class="education-card">
+                <h3>Full Stack Web Development Bootcamp</h3>
+                <p class="school">Online Learning Platform</p>
+                <p class="year">2023</p>
+                <p class="description">Intensive training in MERN stack and modern web development practices</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+        <h2>My <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p class="tech-stack">React.js | Tailwind CSS | JavaScript</p>
+                <p class="description">A responsive portfolio website showcasing my skills, projects, and experience with smooth animations and interactive UI components.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="project-btn">View Live</a>
+                    <a href="#" target="_blank" class="project-btn">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>E-Commerce Application</h3>
+                <p class="tech-stack">MERN Stack | MongoDB | Node.js</p>
+                <p class="description">Full-stack e-commerce application with user authentication, product filtering, shopping cart, and payment integration features.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="project-btn">View Live</a>
+                    <a href="#" target="_blank" class="project-btn">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Task Management App</h3>
+                <p class="tech-stack">React | Firebase | CSS3</p>
+                <p class="description">A task management application with features like add, edit, delete tasks, mark as complete, and real-time data synchronization using Firebase.</p>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="project-btn">View Live</a>
+                    <a href="#" target="_blank" class="project-btn">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERNSHIP SECTION -->
+    <section class="internship" id="internship">
+        <h2>My <span>Internships</span></h2>
+        <div class="internship-container">
+            <div class="internship-card">
+                <h3>Web Development Intern</h3>
+                <p class="internship-company">Tech Startup Company</p>
+                <p class="internship-year">June 2023 - August 2023</p>
+                <p class="internship-description">Developed responsive web pages using HTML, CSS, and JavaScript. Collaborated with senior developers on front-end projects and learned best practices in web development.</p>
+            </div>
+            <div class="internship-card">
+                <h3>Frontend Developer Intern</h3>
+                <p class="internship-company">Digital Agency</p>
+                <p class="internship-year">January 2023 - March 2023</p>
+                <p class="internship-description">Built interactive UI components using React.js and improved website performance. Worked with design team to implement pixel-perfect designs and ensure cross-browser compatibility.</p>
+            </div>
+            <div class="internship-card">
+                <h3>Full Stack Developer Intern</h3>
+                <p class="internship-company">Software Development Company</p>
+                <p class="internship-year">September 2022 - November 2022</p>
+                <p class="internship-description">Assisted in developing MERN stack applications, database design with MongoDB, and RESTful API development. Gained hands-on experience with version control and agile methodologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <h2>Get In <span>Touch</span></h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>jeyaveer80@example.com</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+91 8015534069</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Tamilnadu, INDIA</p>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jeyaveer VS. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const skillDetails = {
+            java: {
+                title: 'Java',
+                level: 'Advanced',
+                description: 'Expertise in object-oriented programming, design patterns, and enterprise applications.',
+                completed: [
+                    'Built robust backend applications using Spring Framework',
+                    'Developed REST APIs with Java and Spring Boot',
+                    'Implemented multithreading and concurrent programming',
+                    'Database operations with JDBC and Hibernate',
+                    'Created microservices architecture projects',
+                    'Unit testing with JUnit and Mockito'
+                ]
+            },
+            python: {
+                title: 'Python',
+                level: 'Intermediate',
+                description: 'Proficient in Python for web development, data manipulation, and automation.',
+                completed: [
+                    'Web framework development with Django',
+                    'Data analysis and manipulation with Pandas',
+                    'Web scraping projects',
+                    'Automation scripts for various tasks',
+                    'RESTful API development',
+                    'Working with libraries like NumPy and Matplotlib'
+                ]
+            },
+            javascript: {
+                title: 'JavaScript',
+                level: 'Advanced',
+                description: 'Expert in vanilla JavaScript and modern ES6+ features for interactive web applications.',
+                completed: [
+                    'DOM manipulation and event handling',
+                    'Asynchronous programming with Promises and async/await',
+                    'ES6+ features and modern JavaScript syntax',
+                    'API integration and AJAX requests',
+                    'Performance optimization techniques',
+                    'Cross-browser compatibility'
+                ]
+            },
+            react: {
+                title: 'React.js',
+                level: 'Advanced',
+                description: 'Experienced in building dynamic, responsive user interfaces with React.',
+                completed: [
+                    'Component-based architecture design',
+                    'State management with Redux and Context API',
+                    'React Hooks and custom hooks development',
+                    'Building responsive designs with Tailwind CSS',
+                    'Server-side rendering concepts',
+                    'Performance optimization and code splitting'
+                ]
+            },
+            node: {
+                title: 'Node.js',
+                level: 'Intermediate',
+                description: 'Competent in building scalable server-side applications with Node.js.',
+                completed: [
+                    'Express.js framework development',
+                    'RESTful API creation and authentication',
+                    'Database integration with MongoDB and SQL',
+                    'Middleware implementation',
+                    'Error handling and validation',
+                    'Deployment and server management'
+                ]
+            },
+            html: {
+                title: 'HTML/CSS',
+                level: 'Advanced',
+                description: 'Expert in semantic HTML and modern CSS for creating beautiful, accessible websites.',
+                completed: [
+                    'Semantic HTML5 markup',
+                    'Responsive design with Flexbox and Grid',
+                    'CSS animations and transitions',
+                    'Mobile-first approach',
+                    'CSS preprocessors (SASS/SCSS)',
+                    'Accessibility standards (WCAG)'
+                ]
+            }
+        };
+
+        function showSkillDetail(skill) {
+            const detail = skillDetails[skill];
+            const detailDiv = document.getElementById('skillDetail');
+            
+            detailDiv.innerHTML = `
+                <h2>${detail.title}</h2>
+                <p class="skill-level">Level: <span>${detail.level}</span></p>
+                <p class="skill-description">${detail.description}</p>
+                <h3>What I've Completed:</h3>
+                <ul class="skill-list">
+                    ${detail.completed.map(item => `<li>${item}</li>`).join('')}
+                </ul>
+            `;
+            
+            document.getElementById('skillModal').style.display = 'block';
+        }
+
+        function closeSkillDetail() {
+            document.getElementById('skillModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('skillModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
