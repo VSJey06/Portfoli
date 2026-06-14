@@ -249,7 +249,7 @@ span{
 }
 
 .typing-text span::before{
-    content: "Web Developer";
+    content: "Aspiring Web Developer";
     color: #b74b4b;
     animation: words 20s steps(1) infinite;
     display: inline-block;
@@ -278,19 +278,10 @@ span{
 
 @keyframes words{
     0%, 20%{
-        content: "Web Developer";
+        content: "Aspiring Web Developerr";
     }
     21%, 40%{
-        content: "Developer";
-    }
-    41%, 60%{
-        content: "Full Stack Developer";
-    }
-    61%, 80%{
-        content: "Designer";
-    }
-    81%, 100%{
-        content: "Problem Solver";
+        content: "Java & Web Development Enthusiast";
     }
 }
 
@@ -319,61 +310,10 @@ span{
         margin-top: 4rem;
     }
 }
-
-/* SERVICES SECTION */
-.services {
-    background-color: rgb(29, 27, 27);
-}
-
-.services h2 {
-    font-size: 4rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    font-weight: 700;
-}
-
-.services-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.service-card {
-    background-color: #1a1a1a;
-    padding: 2rem;
-    border-radius: 1rem;
-    text-align: center;
-    border: 2px solid transparent;
-    transition: 0.3s ease;
-}
-
-.service-card:hover {
-    border-color: #b74b4b;
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(183, 75, 75, 0.3);
-}
-
-.service-card i {
-    font-size: 3rem;
-    color: #b74b4b;
-    margin-bottom: 1rem;
-}
-
-.service-card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.service-card p {
-    font-size: 1.4rem;
-    color: #aaa;
-}
-
 /* SKILLS SECTION */
 .skills {
     background-color: rgb(29, 27, 27);
 }
-
 .skills h2 {
     font-size: 4rem;
     margin-bottom: 3rem;
